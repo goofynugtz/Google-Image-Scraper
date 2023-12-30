@@ -32,9 +32,9 @@ class GoogleImageScraper():
         if (type(number_of_images)!=int):
             print("[Error] Number of images must be integer value.")
             return
-        if not os.path.exists(image_path):
-            print("[INFO] Image path not found. Creating a new folder.")
-            os.makedirs(image_path)
+        # if not os.path.exists(image_path):
+        #     print("[INFO] Image path not found. Creating a new folder.")
+        #     os.makedirs(image_path)
             
         #check if chromedriver is installed
         if (not os.path.isfile(webdriver_path)):
